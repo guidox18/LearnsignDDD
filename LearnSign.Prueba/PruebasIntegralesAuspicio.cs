@@ -8,12 +8,12 @@ using Learnsign.Infraestructura;
 namespace LearnSign.Prueba
 {
     /// <summary>
-    /// Descripción resumida de PruebasIntegralesAlumno
+    /// Descripción resumida de PruebasIntegralesAuspicio
     /// </summary>
     [TestClass]
-    public class PruebasIntegralesAlumno
+    public class PruebasIntegralesAuspicio
     {
-        public PruebasIntegralesAlumno()
+        public PruebasIntegralesAuspicio()
         {
             //
             // TODO: Agregar aquí la lógica del constructor
@@ -61,17 +61,17 @@ namespace LearnSign.Prueba
         #endregion
 
         [TestMethod]
-        public void AgregarAlumno()
+        public void AgregarAuspicio()
         {
-            var lo_alumno = Alumno.Agregar(1, "Guido", "Pacsi Candia", "pacsi.guido@gmail.com", 1, "123456");
+            var lo_auspicio = Auspicio.Agregar(1, "Auspicio 01", "/imagenes/foto0001.jpg");
             using (var lo_contexto = new LearnSignContexto())
             {
 
-                lo_contexto.Alumnos.Add(lo_alumno);
+                lo_contexto.Auspicios.Add(lo_auspicio);
                 lo_contexto.SaveChanges();
 
             }
-            Assert.IsTrue(lo_alumno.IdAlumno == 8);
+            Assert.IsTrue(lo_auspicio.IdAuspicio == 1);
             //
             // TODO: Agregar aquí la lógica de las pruebas
             //
