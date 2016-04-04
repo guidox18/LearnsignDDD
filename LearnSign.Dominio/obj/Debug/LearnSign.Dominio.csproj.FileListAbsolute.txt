@@ -1,0 +1,5 @@
+D:\UPT 2016 I\BD2\LearnsignDDD\LearnSign.Dominio\bin\Debug\LearnSign.Dominio.dll
+D:\UPT 2016 I\BD2\LearnsignDDD\LearnSign.Dominio\bin\Debug\LearnSign.Dominio.pdb
+D:\UPT 2016 I\BD2\LearnsignDDD\LearnSign.Dominio\obj\Debug\LearnSign.Dominio.csprojResolveAssemblyReference.cache
+D:\UPT 2016 I\BD2\LearnsignDDD\LearnSign.Dominio\obj\Debug\LearnSign.Dominio.dll
+D:\UPT 2016 I\BD2\LearnsignDDD\LearnSign.Dominio\obj\Debug\LearnSign.Dominio.pdb

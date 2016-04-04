@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LearnSign.Dominio.Tema">
+    <Position X="3.25" Y="3.5" Width="1.5" />
+    <AssociationLine Name="ModuloX" Type="LearnSign.Dominio.Modulo" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.75" Y="3.791" />
+        <Point X="6" Y="3.791" />
+        <Point X="6" Y="2.824" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAQAAAiAAAAAAAAgAABAAAIAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Tema.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ModuloX" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LearnSign.Dominio.Alumno">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAQACQAAAAEgAAAgAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Alumno.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LearnSign.Dominio.Comentario">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAQAAAgAAEAABAAAAABAAEAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Comentario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TemaX" />
+      <Property Name="Estudiante" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LearnSign.Dominio.Evaluacion">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAQEAAgAAEAAAAAAAAAAAEAAAAAAAAAEAAAACA=</HashCode>
+      <FileName>Evaluacion.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TemaX" />
+      <Property Name="Estudiante" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LearnSign.Dominio.Modulo">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAACAAAAAAAAgAAAAAAAAAAAAAQAAAAAAAg=</HashCode>
+      <FileName>Modulo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LearnSign.Dominio.Pregunta">
+    <Position X="5.75" Y="4" Width="1.5" />
+    <AssociationLine Name="TemaX" Type="LearnSign.Dominio.Tema" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.75" Y="5.312" />
+        <Point X="5.625" Y="5.312" />
+        <Point X="5.625" Y="5.312" />
+        <Point X="4.75" Y="5.312" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BAAAAAAQABAwAAAAAAAAAAABAAEAABAAAAAAAAAAAAI=</HashCode>
+      <FileName>Pregunta.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TemaX" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LearnSign.Dominio.Adminsitrador">
+    <Position X="7.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAASAAAAEACAAgAAAAAEAAAAAABAAAggABAg=</HashCode>
+      <FileName>Adminsitrador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LearnSign.Dominio.Articulo">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAABBAAAAAAAAAAAAAAAAABg=</HashCode>
+      <FileName>Articulo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LearnSign.Dominio.Auspicio">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAgAAAAAAAAAAAAAAAAAAQAAg=</HashCode>
+      <FileName>Auspicio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LearnSign.Dominio.RedSocial">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAw=</HashCode>
+      <FileName>RedSocial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LearnSign.Dominio.Web">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAIAAAAAAAAAAAAAAEAABA=</HashCode>
+      <FileName>Web.cs</FileName>
+      <NewMemberFileName>web.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

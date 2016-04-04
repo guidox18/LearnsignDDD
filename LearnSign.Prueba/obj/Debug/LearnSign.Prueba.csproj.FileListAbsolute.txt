@@ -1,0 +1,14 @@
+D:\UPT 2016 I\BD2\LearnsignDDD\LearnSign.Prueba\bin\Debug\LearnSign.Prueba.dll.config
+D:\UPT 2016 I\BD2\LearnsignDDD\LearnSign.Prueba\bin\Debug\LearnSign.Prueba.dll
+D:\UPT 2016 I\BD2\LearnsignDDD\LearnSign.Prueba\bin\Debug\LearnSign.Prueba.pdb
+D:\UPT 2016 I\BD2\LearnsignDDD\LearnSign.Prueba\bin\Debug\EntityFramework.dll
+D:\UPT 2016 I\BD2\LearnsignDDD\LearnSign.Prueba\bin\Debug\EntityFramework.SqlServer.dll
+D:\UPT 2016 I\BD2\LearnsignDDD\LearnSign.Prueba\bin\Debug\LearnSign.Dominio.dll
+D:\UPT 2016 I\BD2\LearnsignDDD\LearnSign.Prueba\bin\Debug\Learnsign.Infraestructura.dll
+D:\UPT 2016 I\BD2\LearnsignDDD\LearnSign.Prueba\bin\Debug\LearnSign.Dominio.pdb
+D:\UPT 2016 I\BD2\LearnsignDDD\LearnSign.Prueba\bin\Debug\Learnsign.Infraestructura.pdb
+D:\UPT 2016 I\BD2\LearnsignDDD\LearnSign.Prueba\bin\Debug\EntityFramework.xml
+D:\UPT 2016 I\BD2\LearnsignDDD\LearnSign.Prueba\bin\Debug\EntityFramework.SqlServer.xml
+D:\UPT 2016 I\BD2\LearnsignDDD\LearnSign.Prueba\obj\Debug\LearnSign.Prueba.csprojResolveAssemblyReference.cache
+D:\UPT 2016 I\BD2\LearnsignDDD\LearnSign.Prueba\obj\Debug\LearnSign.Prueba.dll
+D:\UPT 2016 I\BD2\LearnsignDDD\LearnSign.Prueba\obj\Debug\LearnSign.Prueba.pdb

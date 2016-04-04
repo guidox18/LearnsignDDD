@@ -1,0 +1,12 @@
+D:\UPT 2016 I\BD2\LearnsignDDD\Learnsign.Infraestructura\bin\Debug\Learnsign.Infraestructura.dll.config
+D:\UPT 2016 I\BD2\LearnsignDDD\Learnsign.Infraestructura\bin\Debug\Learnsign.Infraestructura.dll
+D:\UPT 2016 I\BD2\LearnsignDDD\Learnsign.Infraestructura\bin\Debug\Learnsign.Infraestructura.pdb
+D:\UPT 2016 I\BD2\LearnsignDDD\Learnsign.Infraestructura\bin\Debug\EntityFramework.dll
+D:\UPT 2016 I\BD2\LearnsignDDD\Learnsign.Infraestructura\bin\Debug\EntityFramework.SqlServer.dll
+D:\UPT 2016 I\BD2\LearnsignDDD\Learnsign.Infraestructura\bin\Debug\LearnSign.Dominio.dll
+D:\UPT 2016 I\BD2\LearnsignDDD\Learnsign.Infraestructura\bin\Debug\LearnSign.Dominio.pdb
+D:\UPT 2016 I\BD2\LearnsignDDD\Learnsign.Infraestructura\bin\Debug\EntityFramework.xml
+D:\UPT 2016 I\BD2\LearnsignDDD\Learnsign.Infraestructura\bin\Debug\EntityFramework.SqlServer.xml
+D:\UPT 2016 I\BD2\LearnsignDDD\Learnsign.Infraestructura\obj\Debug\Learnsign.Infraestructura.csprojResolveAssemblyReference.cache
+D:\UPT 2016 I\BD2\LearnsignDDD\Learnsign.Infraestructura\obj\Debug\Learnsign.Infraestructura.dll
+D:\UPT 2016 I\BD2\LearnsignDDD\Learnsign.Infraestructura\obj\Debug\Learnsign.Infraestructura.pdb
