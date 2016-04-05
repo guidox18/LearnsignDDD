@@ -12,7 +12,7 @@ namespace Learnsign.Infraestructura
 
     public class LearnSignContexto : DbContext
     {
-        public LearnSignContexto() : base("Conexion")
+        public LearnSignContexto() : base("name=CONEXIONSQL")
         {
             Database.SetInitializer<LearnSignContexto>(new InicializadorDb());
         }
@@ -30,7 +30,6 @@ namespace Learnsign.Infraestructura
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Adminsitrador>().HasKey(k => k.IdAdministrador);
             modelBuilder.Entity<Alumno>().HasKey(k => k.IdAlumno);
             modelBuilder.Entity<Articulo>().HasKey(k => k.IdArticulo);
@@ -42,6 +41,7 @@ namespace Learnsign.Infraestructura
             modelBuilder.Entity<RedSocial>().HasKey(k => k.IdRedSocial);
             modelBuilder.Entity<Tema>().HasKey(k => k.IdTema);
             modelBuilder.Entity<Web>().HasKey(k => k.IdWeb);
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
