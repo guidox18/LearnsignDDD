@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Learnsign.Help;
 
 namespace LearnSign.Dominio
 {
@@ -22,6 +23,9 @@ namespace LearnSign.Dominio
         public int Sexo { get; private set; }
         public int Estado { get; private set; }
         public string Pass { get; private set; }
+        public Guid FichaCambioPass { get; private set; }
+        public const int PassMinLength = 6;
+        public const int PassMaxLength = 30;
         /// <summary>
         /// Construcctor
         /// </summary>
@@ -70,11 +74,35 @@ namespace LearnSign.Dominio
         /// <param name="as_nom_alumno"></param>
         /// <param name="as_apell_alumno"></param>
         /// <param name="as_email_alum"></param>
-        public void ActualizarPass(string as_pass_alumno)
+        public void ActualizarPass(Guid ficha, string nuevaPass, string confirmacionDePass)
         {
-            Pass = as_pass_alumno;
+            if (!FichaCambioPass.Equals(ficha)){
+                throw new Exception("ficha para alteracion de contraseña invalido");
+            }
+            SetPass(nuevaPass, confirmacionDePass);
+            GenerarNuevaFichaActuPass();
         }
-
-
+        /// <summary>
+        /// Registra la nueva contraseña 
+        /// validando: datos nulos o vacios, cantidad de caracteres o contraseñas que no coincidan
+        /// </summary>
+        /// <param name="nuevaPass"></param>
+        /// <param name="confirmacionDePass"></param>
+        private void SetPass(string nuevaPass, string confirmacionDePass)
+        {
+            Guard.ForNullOrEmptyDefaultMessage(Pass, "Contraseña");
+            Guard.ForNullOrEmptyDefaultMessage(confirmacionDePass, "Confirmación de Contraseña");
+            Guard.StringLength("Contraseña", Pass, PassMinLength, PassMaxLength);
+            Guard.AreEqual(Pass, confirmacionDePass, "Las contraseñas no coinciden!");
+        }
+        /// <summary>
+        /// Global Unique IDentifier.
+        /// </summary>
+        /// <returns>Devuelve un Global Unique IDentifier.</returns>
+        private Guid GenerarNuevaFichaActuPass()
+        {
+            FichaCambioPass = Guid.NewGuid();
+            return FichaCambioPass;
+        }
     }
 }
