@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LearnSign.Dominio</name>
+    </assembly>
+    <members>
+        <member name="T:LearnSign.Dominio.Alumno">
+            <summary>
+            Esta clase contiene los atributos y metodos de la clase Alumno
+            </summary>
+        </member>
+        <member name="P:LearnSign.Dominio.Alumno.IdAlumno">
+            <summary>
+            En esta seccion se encuentra los atributos
+            </summary>
+        </member>
+        <member name="M:LearnSign.Dominio.Alumno.#ctor">
+            <summary>
+            Construcctor
+            </summary>
+        </member>
+        <member name="M:LearnSign.Dominio.Alumno.Agregar(System.Int32,System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Este método nos permite agregar un nuevo alumno 
+            </summary>
+            <param name="ai_id_alumno"></param>
+            <param name="as_nom_alumno"></param>
+            <param name="as_apell_alumno"></param>
+            <param name="as_email_alum"></param>
+            <param name="ai_sexo_alumno"></param>
+            <param name="as_pass_alumno"></param>
+            <returns>Devuelve un Alumno nuevo</returns>
+        </member>
+    </members>
+</doc>
