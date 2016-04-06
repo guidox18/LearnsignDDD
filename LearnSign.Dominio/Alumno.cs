@@ -52,6 +52,29 @@ namespace LearnSign.Dominio
                 Pass= as_pass_alumno
             };
         }
+        /// <summary>
+        /// Este método actualiza datos del alumno
+        /// </summary>
+        /// <param name="as_nom_alumno"></param>
+        /// <param name="as_apell_alumno"></param>
+        /// <param name="as_email_alum"></param>
+        public void Actualizar(string as_nom_alumno, string as_apell_alumno, string as_email_alum)
+        {
+            Nombre = as_nom_alumno,
+            Apellidos = as_apell_alumno,
+            Email = as_email_alum,
+        }
+        /// <summary>
+        /// Este metodo modifica la contraseña del alumno
+        /// </summary>
+        /// <param name="as_nom_alumno"></param>
+        /// <param name="as_apell_alumno"></param>
+        /// <param name="as_email_alum"></param>
+        public void ActualizarPass(string as_pass_alumno)
+        {
+            Pass = as_pass_alumno;
+        }
+
 
     }
 }
