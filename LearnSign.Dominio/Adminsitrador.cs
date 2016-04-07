@@ -52,7 +52,7 @@ namespace LearnSign.Dominio
         /// <param name="as_nom_alumno"></param>
         /// <param name="as_apell_alumno"></param>
         /// <param name="as_email_alum"></param>
-        public void Actualizar(int ai_dni_admin, string as_nom_admin, string as_apell_admin, string as_email_admin, string as_direc_admin, int ai_tel_admin, int ai_cel_admin )
+        /*public void Actualizar(int ai_dni_admin, string as_nom_admin, string as_apell_admin, string as_email_admin, string as_direc_admin, int ai_tel_admin, int ai_cel_admin )
         {
             DNI = ai_dni_admin;
             Nombre = as_nom_admin;
@@ -61,9 +61,9 @@ namespace LearnSign.Dominio
             Direccion = as_direc_admin;
             Telefono = ai_tel_admin;
             Celular = ai_cel_admin;
-        }
+        }*/
 
-        public void ActualizarPass(Guid ficha, string nuevaPass, string confirmacionDePass)
+        /*public void ActualizarPass(Guid ficha, string nuevaPass, string confirmacionDePass)
         {
             if (!FichaCambioPass.Equals(ficha))
             {
@@ -71,9 +71,9 @@ namespace LearnSign.Dominio
             }
             SetPass(nuevaPass, confirmacionDePass);
             GenerarNuevaFichaActuPass();
-        }
+        }*/
 
-        private void SetPass(string nuevaPass, string confirmacionDePass)
+        /*private void SetPass(string nuevaPass, string confirmacionDePass)
         {
             Guard.ForNullOrEmptyDefaultMessage(Pass, "Contraseña");
             Guard.ForNullOrEmptyDefaultMessage(confirmacionDePass, "Confirmación de Contraseña");
@@ -85,7 +85,7 @@ namespace LearnSign.Dominio
         {
             FichaCambioPass = Guid.NewGuid();
             return FichaCambioPass;
-        }
+        }*/
 
     }
 }
