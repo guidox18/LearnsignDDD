@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Regiones</title>
+</head>
+<body>
+    <div>
+        <h2>Todas las regiones</h2>
+        <ul id="regiones"/>
+    </div>
+    <div>
+        <h2>Buscar por ID</h2>
+        <input type="text" id="IdRegion" size="5" />
+        <input type="button" value="Buscar" onclick="buscar()" />
+        <p id="region" />
+    </div>
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script>
+        var uri = 'regiones';
+        $(document).ready(function () {
+            $.getJSON(uri).done(function (data) {
+                $.each(data, function (key, item) {
+                    $('<li>', { text: formato(item) }).appendTo($('#regiones'));
+                });
+            });
+        });
+        function formato(item) {
+            return item.IDRegion + ': ' + item.NombreRegion;
+        }
+        function buscar() {
+            var id = $('#IdRegion').val();
+            $.getJSON(uri + '/' + id)
+                .done(function (data) {
+                    $('#region').text(formato(data));
+                })
+                .fail(function (jqXHR, textStatus, err) {
+                    $('#region').text('Error: ' + err);
+                });
+        }
+    </script>
+</body>
+</html>
