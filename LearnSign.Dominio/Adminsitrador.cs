@@ -7,8 +7,14 @@ using System.Threading.Tasks;
 
 namespace LearnSign.Dominio
 {
+    /// <summary>
+    /// Esta clase contiene los atributos y metodos de la clase Alumno
+    /// </summary>
     public class Adminsitrador
     {
+        /// <summary>
+        /// En esta seccion se encuentra los atributos
+        /// </summary>
         public int IdAdministrador { get; private set; }
         public int DNI { get; private set; }
         public string Nombre { get; private set; }
@@ -23,11 +29,27 @@ namespace LearnSign.Dominio
         public Guid FichaCambioPass { get; private set; }
         public const int PassMinLength = 6;
         public const int PassMaxLength = 30;
-
+        /// <summary>
+        /// Constructor
+        /// </summary>
         private Adminsitrador()
         {
 
         }
+        /// <summary>
+        /// Este método nos permite agregar un nuevo alumno 
+        /// </summary>
+        /// <param name="ai_id_admin"></param>
+        /// <param name="ai_dni_admin"></param>
+        /// <param name="as_nom_admin"></param>
+        /// <param name="as_apell_admin"></param>
+        /// <param name="as_email_admin"></param>
+        /// <param name="as_direc_admin"></param>
+        /// <param name="ai_tel_admin"></param>
+        /// <param name="ai_cel_admin"></param>
+        /// <param name="ai_sexo_admin"></param>
+        /// <param name="as_pass_admin"></param>
+        /// <returns></returns>
         public static Adminsitrador Agregar(int ai_id_admin, int ai_dni_admin, string as_nom_admin, string as_apell_admin, string as_email_admin, string as_direc_admin, int ai_tel_admin, int ai_cel_admin,  int ai_sexo_admin, string as_pass_admin)
         {
             return new Adminsitrador()
