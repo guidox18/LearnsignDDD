@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Learnsign.Help;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,9 @@ namespace LearnSign.Dominio
         public int Sexo { get; private set; }
         public int Estado { get; private set; }
         public string Pass { get; private set; }
+        public Guid FichaCambioPass { get; private set; }
+        public const int PassMinLength = 6;
+        public const int PassMaxLength = 30;
 
         private Adminsitrador()
         {
@@ -57,6 +61,31 @@ namespace LearnSign.Dominio
             Direccion = as_direc_admin;
             Telefono = ai_tel_admin;
             Celular = ai_cel_admin;
-        }//falta estado y password
+        }
+
+        public void ActualizarPass(Guid ficha, string nuevaPass, string confirmacionDePass)
+        {
+            if (!FichaCambioPass.Equals(ficha))
+            {
+                throw new Exception("ficha para alteracion de contraseña invalido");
+            }
+            SetPass(nuevaPass, confirmacionDePass);
+            GenerarNuevaFichaActuPass();
+        }
+
+        private void SetPass(string nuevaPass, string confirmacionDePass)
+        {
+            Guard.ForNullOrEmptyDefaultMessage(Pass, "Contraseña");
+            Guard.ForNullOrEmptyDefaultMessage(confirmacionDePass, "Confirmación de Contraseña");
+            Guard.StringLength("Contraseña", Pass, PassMinLength, PassMaxLength);
+            Guard.AreEqual(Pass, confirmacionDePass, "Las contraseñas no coinciden!");
+        }
+
+        private Guid GenerarNuevaFichaActuPass()
+        {
+            FichaCambioPass = Guid.NewGuid();
+            return FichaCambioPass;
+        }
+
     }
 }
