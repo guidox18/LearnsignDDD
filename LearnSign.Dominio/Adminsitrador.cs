@@ -48,11 +48,15 @@ namespace LearnSign.Dominio
         /// <param name="as_nom_alumno"></param>
         /// <param name="as_apell_alumno"></param>
         /// <param name="as_email_alum"></param>
-        /*public void Actualizar(string as_nom_alumno, string as_apell_alumno, string as_email_alum)
+        public void Actualizar(int ai_dni_admin, string as_nom_admin, string as_apell_admin, string as_email_admin, string as_direc_admin, int ai_tel_admin, int ai_cel_admin )
         {
-            Nombre = as_nom_alumno;
-            Apellidos = as_apell_alumno;
-            Email = as_email_alum;
-        }*/
+            DNI = ai_dni_admin;
+            Nombre = as_nom_admin;
+            Apellidos = as_apell_admin;
+            Email = as_email_admin;
+            Direccion = as_direc_admin;
+            Telefono = ai_tel_admin;
+            Celular = ai_cel_admin;
+        }//falta estado y password
     }
 }
