@@ -6,17 +6,32 @@ using System.Threading.Tasks;
 
 namespace LearnSign.Dominio
 {
+    /// <summary>
+    /// Esta clase contiene los atributos y metodos de la clase comentario
+    /// </summary>
     public class Modulo
     {
+        /// <summary>
+        /// En esta seccion se encuentra los atributos
+        /// </summary>
         public int IdModulo { get; private set; }
         public string Nombre { get; private set; }
         public int Posicion { get; private set; }
         public int Estado { get; private set; }
-
+        /// <summary>
+        /// Contructor
+        /// </summary>
         private Modulo()
         {
             
         }
+        /// <summary>
+        /// Metodo para Agregar Modulo
+        /// </summary>
+        /// <param name="ai_id_modulo"></param>
+        /// <param name="as_nom_modulo"></param>
+        /// <param name="ai_posi_modulo"></param>
+        /// <returns></returns>
         public static Modulo Agregar(int ai_id_modulo, string as_nom_modulo, int ai_posi_modulo)
         {
             return new Modulo()
