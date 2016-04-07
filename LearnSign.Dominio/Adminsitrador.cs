@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace LearnSign.Dominio
 {
     /// <summary>
-    /// Esta clase contiene los atributos y metodos de la clase Alumno
+    /// Esta clase contiene los atributos y metodos de la clase Administrador
     /// </summary>
     public class Adminsitrador
     {

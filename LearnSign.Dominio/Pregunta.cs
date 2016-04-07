@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 namespace LearnSign.Dominio
 {
     /// <summary>
-    /// 
+    /// Esta clase contiene los atributos y metodos de la clase Pregunta
     /// </summary>
     public class Pregunta
     {
         /// <summary>
-        /// 
+        /// En esta seccion se encuentra los atributos
         /// </summary>
         public int IdPregunta { get; private set; }
         public int IdTema { get; private set; }
