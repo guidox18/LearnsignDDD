@@ -70,6 +70,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PruebasUnitariasArticulo.cs" />
     <Compile Include="PruebasUnitariasAuspicio.cs" />
+    <Compile Include="PruebasUnitariasModulo.cs" />
+    <Compile Include="PruebasUnitariasTema.cs" />
+    <Compile Include="PruebasUnitariasEvaluacion.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LearnSign.Dominio\LearnSign.Dominio.csproj">
