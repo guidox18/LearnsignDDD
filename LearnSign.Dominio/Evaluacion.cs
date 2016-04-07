@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace LearnSign.Dominio
 {
     /// <summary>
-    /// Esta clase contiene los atributos y metodos de la clase comentario
+    /// Esta clase contiene los atributos y metodos de la clase evalcuacion
     /// </summary>
     public class Evaluacion
     {
