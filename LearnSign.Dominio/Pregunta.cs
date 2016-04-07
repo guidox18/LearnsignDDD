@@ -34,9 +34,18 @@ namespace LearnSign.Dominio
                 Imagen = as_imagen_pregunta,
                 AlternativaI = as_alt_i_pregunta,
                 AlternativaII = as_alt_ii_pregunta,
-                AlternativaIII = as_alt_ii_pregunta,
+                AlternativaIII = as_alt_iii_pregunta,
                 Respuesta = as_res_pregunta
             };
+        }
+        public void Actualizar(string as_descr_pregunta, string as_imagen_pregunta, string as_alt_i_pregunta, string as_alt_ii_pregunta, string as_alt_iii_pregunta, string as_res_pregunta)
+        {
+            Descripcion = as_descr_pregunta;
+            Imagen = as_imagen_pregunta;
+            AlternativaI = as_alt_i_pregunta;
+            AlternativaII = as_alt_ii_pregunta;
+            AlternativaIII = as_alt_iii_pregunta;
+            Respuesta = as_res_pregunta;
         }
 
     }
