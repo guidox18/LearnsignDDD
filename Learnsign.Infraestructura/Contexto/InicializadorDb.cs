@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Learnsign.Infraestructura.Contexto
 {
-    public class InicializadorDb : CreateDatabaseIfNotExists<LearnSignContexto>
+    public class InicializadorDb : CreateDatabaseIfNotExists<LSContexto>
     {
-        protected override void Seed(LearnSignContexto contexto)
+        protected override void Seed(LSContexto contexto)
         {
 
         }

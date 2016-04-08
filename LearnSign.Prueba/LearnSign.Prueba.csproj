@@ -75,9 +75,9 @@
     <Compile Include="PruebasUnitariasEvaluacion.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LearnSign.Dominio\LearnSign.Dominio.csproj">
+    <ProjectReference Include="..\LearnSign.Dominio\Learnsign.Dominio.csproj">
       <Project>{ed9e27d3-1822-4c73-b1f7-64f475d8181c}</Project>
-      <Name>LearnSign.Dominio</Name>
+      <Name>Learnsign.Dominio</Name>
     </ProjectReference>
     <ProjectReference Include="..\Learnsign.Infraestructura\Learnsign.Infraestructura.csproj">
       <Project>{1db497e3-ad2e-4a44-90b2-2e516b3c16d0}</Project>

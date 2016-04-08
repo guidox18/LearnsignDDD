@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnSign.Dominio", "LearnSign.Dominio\LearnSign.Dominio.csproj", "{ED9E27D3-1822-4C73-B1F7-64F475D8181C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learnsign.Dominio", "LearnSign.Dominio\Learnsign.Dominio.csproj", "{ED9E27D3-1822-4C73-B1F7-64F475D8181C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learnsign.Infraestructura", "Learnsign.Infraestructura\Learnsign.Infraestructura.csproj", "{1DB497E3-AD2E-4A44-90B2-2E516B3C16D0}"
 EndProject

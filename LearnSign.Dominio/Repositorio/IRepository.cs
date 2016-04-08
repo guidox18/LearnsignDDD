@@ -3,23 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LearnSign.Dominio;
+using Learnsign.Dominio;
 
-namespace LearnSign.Dominio.InterfazRepo
+namespace Learnsign.Dominio.Repositorio
 {
     /// <summary>
     /// Clase Interfaz que nos permita 
     /// </summary>
-    public interface IRepository<TEntity> : IRepositorioLectura
+    public interface IRepository<TEntity> : IRepositorioLectura<TEntity>
     {
-        void Agregar(TEntity obj);
-        void Eliminar(TEntity obj);
-        void Eliminar(int id);
-        TEntity Obtener(int id);
-        TEntity First();
-        IQueryable<TEntity> Get();
-        void Update(TEntity obj);
-        void Commit();
-        void AddOrUpdate(TEntity obj);
+        bool Adicionar(TEntity ao_entidad);
+        bool Actualizar(TEntity ao_entidad);
+        bool GuardarCambios();
     }
 }

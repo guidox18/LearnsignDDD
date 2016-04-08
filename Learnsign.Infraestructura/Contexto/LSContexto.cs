@@ -4,17 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
-using LearnSign.Dominio;
+using Learnsign.Dominio;
 
 namespace Learnsign.Infraestructura.Contexto
 {
     // contexto define la aplicacion
 
-    public class LearnSignContexto : DbContext
+    public class LSContexto : DbContext
     {
-        public LearnSignContexto() : base("name=CONEXIONSQL")
+        public LSContexto(string as_conexion)
+            : base(as_conexion)
         {
-            Database.SetInitializer<LearnSignContexto>(new InicializadorDb());
+            //Database.SetInitializer<HRContexto>(null);
+            Database.SetInitializer<LSContexto>(new InicializadorDb());
+        }
+        public LSContexto() : base("name=CONEXIONSQL")
+        {
+            Database.SetInitializer<LSContexto>(new InicializadorDb());
         }
         public DbSet<Administrador> Administradores { get; set; }
         public DbSet<Alumno> Alumnos { get; set; }

@@ -52,7 +52,7 @@
   <ItemGroup>
     <Compile Include="Contexto\ContextoBase.cs" />
     <Compile Include="Contexto\InicializadorDb.cs" />
-    <Compile Include="Contexto\LearnSignContexto.cs" />
+    <Compile Include="Contexto\LSContexto.cs" />
     <Compile Include="Mapeos\AdministradorConfiguracion.cs" />
     <Compile Include="Mapeos\AlumnoConfiguracion.cs" />
     <Compile Include="Mapeos\ArticuloConfiguracion.cs" />
@@ -65,12 +65,8 @@
     <Compile Include="Mapeos\TemaConfiguracion.cs" />
     <Compile Include="Mapeos\WebConfiguracion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\LearnSign.Dominio\LearnSign.Dominio.csproj">
-      <Project>{ed9e27d3-1822-4c73-b1f7-64f475d8181c}</Project>
-      <Name>LearnSign.Dominio</Name>
-    </ProjectReference>
+    <Compile Include="Repositorio\RepositorioGenerico.cs" />
+    <Compile Include="Repositorio\RepositorioLectura.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -79,7 +75,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Repositorio\" />
+    <ProjectReference Include="..\LearnSign.Dominio\Learnsign.Dominio.csproj">
+      <Project>{ed9e27d3-1822-4c73-b1f7-64f475d8181c}</Project>
+      <Name>Learnsign.Dominio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearnSign.Dominio
+namespace Learnsign.Dominio
 {
     /// <summary>
-    /// Esta clase contiene los atributos y metodos de la clase evalcuacion
+    /// Esta clase contiene los atributos y metodos de la clase evaluacion
     /// </summary>
     public class Evaluacion
     {
