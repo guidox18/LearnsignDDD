@@ -19,6 +19,11 @@ namespace Learnsign.Dominio
         public string Titulo { get; private set; }
         public string Subtitulo { get; private set; }
         public string Pie { get; private set; }
+
+        private static readonly Lazy<Web> lazy =
+        new Lazy<Web>(() => new Web());
+
+        public static Web Instance { get { return lazy.Value; } }
         /// <summary>
         /// Constructor
         /// </summary>
@@ -26,6 +31,7 @@ namespace Learnsign.Dominio
         {
 
         }
+    
         /// <summary>
         /// Metodo que nos permite Agregar Web
         /// </summary>
