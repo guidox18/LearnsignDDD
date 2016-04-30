@@ -45,6 +45,8 @@ namespace Learnsign.Dominio
         /// <returns>Devuelve un Alumno nuevo</returns>
         public static Alumno Agregar(int ai_id_alumno, string as_nom_alumno, string as_apell_alumno, string as_email_alum, int ai_sexo_alumno, string as_pass_alumno )
         {
+            //El principio de Single responsibility de SOLID se aplica aqui
+            //ya que la clase alumno tiene el metodo agregar que tienen la mayoria de las clases
             return new Alumno()
             {
                 IdAlumno = ai_id_alumno,

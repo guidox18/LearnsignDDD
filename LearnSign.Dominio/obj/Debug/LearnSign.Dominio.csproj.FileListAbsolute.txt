@@ -9,3 +9,6 @@ C:\Users\Usuario\Documents\GitHub\LearnSign.Dominio\bin\Debug\LearnSign.Dominio.
 C:\Users\Usuario\Documents\GitHub\LearnSign.Dominio\obj\Debug\LearnSign.Dominio.csprojResolveAssemblyReference.cache
 C:\Users\Usuario\Documents\GitHub\LearnSign.Dominio\obj\Debug\LearnSign.Dominio.dll
 C:\Users\Usuario\Documents\GitHub\LearnSign.Dominio\obj\Debug\LearnSign.Dominio.pdb
+C:\Users\Cio\Source\Repos\LearnsignDDD\LearnSign.Dominio\obj\Debug\Learnsign.Dominio.csprojResolveAssemblyReference.cache
+C:\Users\Cio\Source\Repos\LearnsignDDD\LearnSign.Dominio\obj\Debug\LearnSign.Dominio.dll
+C:\Users\Cio\Source\Repos\LearnsignDDD\LearnSign.Dominio\obj\Debug\LearnSign.Dominio.pdb
