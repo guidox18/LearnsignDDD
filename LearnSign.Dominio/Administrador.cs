@@ -9,6 +9,7 @@ namespace Learnsign.Dominio
 {
     /// <summary>
     /// Esta clase contiene los atributos y metodos de la clase Administrador
+    /// En esta clase se puede crear el factory method y aque la clase permite que se cree un campeon
     /// </summary>
     public class Administrador
     {
